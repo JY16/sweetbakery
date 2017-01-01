@@ -1,0 +1,608 @@
+body {
+	margin: 0;
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../Images/cupcakes-1920.jpg") center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Muli', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    display: flex;;
+	justify-content: center;
+    align-items: center;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+h2 {
+    color: #68228b;
+	font-size: 1.7em;
+}
+
+/****************************************************************************************************************************
+                                                            Header Styles
+****************************************************************************************************************************/
+
+h1 {
+   color: #68228b;
+	font-family: 'Marck Script', sans-serif;
+	font-size: 2.5em; 
+}
+
+
+/****************************************************************************************************************************
+                                                            Nav Styles
+****************************************************************************************************************************/
+
+.mainNav {
+	display: none;
+	background-color: #ffffff;
+	flex-direction: column;
+	font-size: 1.2rem;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+}
+
+.mainNav a {
+	text-decoration: none;
+	color: #68228b;
+	padding: 5px;
+}
+
+.nav-button {
+    align-self: flex-end;
+    height: 2.3em;
+}
+
+.menu-toggle {
+	margin-left: 1em;
+	background-color: inherit;
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'Muli', sans-serif;
+	border: none;  
+}
+
+.menu-toggle i {
+	color: #68228b;
+}
+
+.open nav {
+	display: flex;
+}
+
+.sweet_b {
+	display: none;
+}
+
+
+/****************************************************************************************************************************
+                                                            Home Styles
+****************************************************************************************************************************/
+
+.specials-events:last-of-type {
+    text-align: center;
+    width: 90%;
+    color: #1c1c1c;
+}
+
+.specials-events h3 {
+    text-align: center;
+    color: #1c1c1c;
+}
+
+/****************************************************************************************************************************
+                                                            Services Styles
+****************************************************************************************************************************/
+
+.service-section {
+    background-color: #ffffff;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-cont {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.image-cont img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.info {
+    text-align: center;
+}
+
+/****************************************************************************************************************************
+                                                            Menu Styles
+****************************************************************************************************************************/
+
+.menu-container {
+	display: flex;
+	width: 90%;
+	margin-bottom: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+	.accordian-container label {
+        display: flex;
+        align-items: center;
+		height: 2em;
+		padding-left: 1em;
+		color: #68228b;
+		font-size: 1.3em;
+		box-shadow: 1px 1px 1px 1px rgba(104, 34, 139, 0.3);
+	}
+
+	.accordian-container label:hover {
+        background-color: #68228b;
+        color: #ffffff;
+	}
+
+	.accordian-container input {
+		display: none;
+	}
+
+	.accordian-container article {
+		overflow: hidden;
+		height: 0;
+		transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	}
+
+	.accordian-container input:checked ~ article {
+		transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+		box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3);
+	}
+
+	.accordian-container article p {
+		color: #68228b;
+		line-height: 23px;
+		font-size: 1em;
+        text-align: center;
+		text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+	}
+
+	.accordian-container input:checked ~ article {
+		height: auto;
+	}
+
+.accordian-container .menu-item  {
+    font-size: 1.2em;
+}
+
+.accordian-container .menu-header {
+    display: none;
+}
+
+/****************************************************************************************************************************
+                                                            Gallery Styles
+****************************************************************************************************************************/
+.gallery-section {
+    background-color: #ffffff;
+}
+
+.img_gallery {
+	width: 300px;
+	height: 200px;
+	margin: 5px;
+    border: 2px solid #000000;
+}
+
+.img_gallery img {
+	max-width: 100%;
+    width: 300px;
+    height: 100%;
+}
+
+/****************************************************************************************************************************
+                                                            Contact Styles
+****************************************************************************************************************************/
+
+/****************************
+     Contact Form Styles
+****************************/
+
+
+form {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input[type=text] {
+	border: 2px solid #68228b;
+	border-radius: 10px;
+	background-color: inherit;
+	width: 100%;
+	height: 7%; 
+	padding: 10px;
+	margin: 5px;
+	font-size: 1.2em;
+	color: #68228b;
+}
+
+input[type=text]:focus {
+	outline: none;
+}
+
+input[type=email] {
+	border: 2px solid #68228b;
+	border-radius: 10px;
+	background-color: inherit;
+	width: 100%;
+	height: 7%;
+	padding: 10px;
+	margin: 5px;
+	font-size: 1.2em;
+	color: #68228b;
+}
+
+input[type=email]:focus {
+	outline: none;
+}
+
+textarea {
+	border: 2px solid #68228b;
+	border-radius: 10px;
+	background-color: inherit;
+	width: 100%;
+	padding: 10px;
+	margin: 10px 10px 30px 10px;
+	height: 15%;
+	font-family: inherit;
+	font-size: 1.2em; 
+	color: #68228b;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+input[type=submit] {
+	padding: 10px 15px;
+	border-radius: 5%;
+	background-color: #68228b;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	color: white;
+	border: none;
+	font-size: 1.2em;
+	align-self: center;
+}
+
+.message-p { 
+	font-size: 1.5em;
+	color:  #68228b;
+	margin-left: 5px;
+}
+
+
+/****************************
+ Contact Container Styles
+****************************/
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #68228b;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-info a {
+    display: flex;
+    text-decoration: none;
+    color: #68228b;
+}
+
+.address {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.social-sect {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/****************************************************************************************************************************
+                                                            Footer Styles
+****************************************************************************************************************************/
+
+/****************************************************************************************************************************
+                                                           Social Styles
+****************************************************************************************************************************/
+
+.social-sect {
+	display: flex;
+	align-items: center;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: .3em;
+	border: 2px solid #68228b;
+}
+
+.social i {
+	color: #68228b;
+}
+
+.fa-twitter:hover {
+	color: #0099e5;
+}
+
+.twitter:hover {
+	border: 2px solid #0099e5;
+}
+
+.fa-facebook:hover {
+	color: #3b5998;
+}
+
+.facebook:hover {
+	border: 2px solid #3b5998;
+}
+
+.fa-instagram:hover {
+	color: #405de6;
+}
+
+.instagram:hover {
+	border: 2px solid #405de6;
+}
+
+.fa-pinterest:hover {
+	color: #bd081c;
+}
+
+.pinterest:hover {
+	border: 2px solid #bd081c;
+}
+
+/****************************************************************************************************************************
+                                                           Media Queries
+****************************************************************************************************************************/
+
+@media screen and (min-width: 654px) {
+
+/****************************
+Services Media Query Styles
+****************************/
+    .service-box {
+        display: flex;
+        margin: 1em;
+        align-items: center;
+    }
+
+    .info {
+        margin-left: 1em;
+    }
+
+/********************************
+    Gallery Media Query Styles
+********************************/
+
+    .img_gal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img_gallery {
+        width: 200px;
+    }
+
+    .img_gallery img {
+        max-width: 100%;
+    }
+
+/********************************
+Contact Form Media Query Styles
+********************************/
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact_form {
+        width: 80%;
+    }
+
+    form {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+/****************************
+    Home Media Query Styles
+****************************/
+
+    .specials-events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specials-events:last-of-type p {
+        width: 70%;
+    }
+
+/****************************
+Services Media Query Styles
+****************************/
+
+
+/****************************
+Contact Media Query Styles
+****************************/
+    .contact-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+/****************************
+    Nav Media Query Styles
+****************************/
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .mainNav {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+		height: 7em;
+		font-family: 'Muli', sans-serif;
+        margin-top: 0;
+        height: 5em;
+    }
+
+    .sweet_b {
+        display: block;
+        margin-left: 40px;
+			margin-right: 40px;
+			font-size: 2.7em;
+			font-family: 'Marck Script', sans-serif;
+    }
+
+    h1 {
+        display: none;
+    }
+
+/****************************
+Home Media Query Styles
+****************************/
+
+    .home-container {
+        flex-direction: row;
+    }
+
+    .specials-events {
+        width: 50%;
+    }
+
+/****************************
+Services Media Query Styles
+****************************/
+
+    .box-container {
+        display: flex;
+    }
+
+    .service-box {
+        flex-direction: column;
+    }
+
+/********************************
+Contact Form Media Query Styles
+********************************/
+
+.menu-container {
+	display: flex;
+	width: 90%;
+	margin-bottom: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-container input, .menu-container label {
+	display: none;
+}
+
+.accordian .menu-header {
+		display: block;
+        font-size: 1.4em;
+        border-bottom: 1px solid #000000;
+        padding: 1em;
+        color: #1c1c1c;
+    }
+
+    .accordian {
+        margin-bottom: 1em;
+    }
+
+	.accordian-container article {
+		height: 100%;
+	}
+
+	.accordian-container article p {
+		color: #68228b;
+		font-size: 1em;
+        text-align: center;
+        text-shadow: none;
+        color: #1c1c1c;
+	}
+
+    .accordian-container .menu-item  {
+        font-size: 1.3em;
+    }
+
+/****************************
+Contact Media Query Styles
+****************************/
+
+	.address {
+		font-size: 1.3em;
+	}
+
+	.social {
+		width: 40px;
+		height: 40px;
+	}
+
+	.social i {
+		font-size: 1.3em;
+	}
+
+    form {
+        width: 50%;
+    }
+}
