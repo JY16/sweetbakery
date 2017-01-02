@@ -1,7 +1,7 @@
 body {
 	margin: 0;
-	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../Images/cupcakes-1920.jpg") center center no-repeat fixed;
-	/*background-size: cover;*/
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../Images/cupcakes-1920.jpg") center center no-repeat;
+	background-size: cover;
 	font-family: 'Muli', sans-serif;
 }
 
