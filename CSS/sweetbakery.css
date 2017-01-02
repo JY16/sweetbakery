@@ -108,16 +108,14 @@ h1 {
 ****************************************************************************************************************************/
 
 .service-section {
-    background-color: #ffffff;
-	display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #ffff
 }
 
 .service-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+	justify-content: center;
 }
 
 .image-cont {
